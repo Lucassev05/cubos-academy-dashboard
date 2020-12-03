@@ -1,0 +1,19 @@
+.sidebar-container {
+  background: #263238;
+  height: 100vh;
+  max-width: 16.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-container > img {
+  padding: 2rem 4rem;
+}
+
+.sidebar-container > div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,33 @@
+.DefaultMenu {
+  width: 100%;
+  padding: 0.75rem 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.DefaultMenu:hover {
+  background-color: #425057;
+}
+
+.DefaultMenu:active {
+  background-color: #374952;
+}
+
+.MenuActive {
+  background-color: #374952;
+}
+
+.DefaultMenu > img {
+  margin-right: 1rem;
+  width: 1.5rem;
+}
+
+.DefaultMenu > h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

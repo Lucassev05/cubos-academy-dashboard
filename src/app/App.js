@@ -1,12 +1,18 @@
 import "./App.css";
-import { Login } from "../containers/login/index.js";
+import { Sidebar } from "../containers/sidebar/index.js";
+import { Login } from "../containers/login";
+import { Logout } from "../containers/logout";
+import { SaldoEmConta } from "../components/saldoconta";
+import { CardDados } from "../components/cardDados";
+import { Users } from "../assets/index.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Login />
-      </header>
+      <Sidebar />
+      <div>
+        <CardDados src={Users} titulo="Clientes"></CardDados>
+      </div>
     </div>
   );
 }

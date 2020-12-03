@@ -1,0 +1,37 @@
+.inputMargin {
+  margin-top: 3.51rem;
+}
+
+.buttonMargin {
+  margin-top: 3rem;
+  background-color: yellowgreen;
+}
+
+.link {
+  margin-top: 1rem;
+  align-self: flex-end;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #263238;
+}
+
+.Text {
+  margin-top: 2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #263238;
+}
+
+.Text > a {
+  color: #ff038a;
+}

@@ -1,0 +1,62 @@
+.PrimaryButton {
+  background-color: #da0175;
+  border-radius: 1.25rem;
+  padding: 0.68rem 3.75rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.87rem;
+  color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.PrimaryButton:hover {
+  background-color: #ff038a;
+}
+
+.PrimaryButton:active {
+  background-color: #da0175;
+}
+
+.PrimaryButton:focus {
+  outline: none;
+}
+
+.PrimaryButton:disabled {
+  cursor: default;
+  background-color: rgb(150, 105, 129);
+}
+
+.SecondaryButton {
+  background-color: transparent;
+  border-radius: 1.25rem;
+  padding: 0.68rem 3.75rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.87rem;
+  border: 1.5px solid #da0175;
+  color: #da0175;
+  cursor: pointer;
+}
+
+.SecondaryButton:hover {
+  border-color: #ff038a;
+  color: #ff038a;
+}
+
+.SecondaryButton:active {
+  border-color: #da0175;
+  color: #da0175;
+}
+
+.SecondaryButton:focus {
+  outline: none;
+}
+
+.SecondaryButton:disabled {
+  cursor: default;
+  border-color: #9c587c;
+  color: #9c587c;
+}

@@ -1,0 +1,37 @@
+.DefaultInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.DefaultInput > label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 0.93rem;
+  color: #374952;
+  margin-left: 0.87rem;
+}
+
+.DefaultInput > input {
+  padding: 0.87rem;
+  border: none;
+  border-bottom: 1px solid #4c4c4c;
+  margin-top: 0.43rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.005rem;
+  color: #4c4c4c;
+}
+
+.DefaultInput > input::placeholder {
+  color: #a5a5a5;
+}
+
+.DefaultInput > input:focus {
+  outline: none;
+}

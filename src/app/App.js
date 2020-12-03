@@ -5,13 +5,14 @@ import { Logout } from "../containers/logout";
 import { SaldoEmConta } from "../components/saldoconta";
 import { CardDados } from "../components/cardDados";
 import { Users } from "../assets/index.js";
+import { CardClientes } from "../components/cardDados/clientes/index.js";
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
       <div>
-        <CardDados src={Users} titulo="Clientes"></CardDados>
+        <CardClientes emDia="20" inadimplentes="33" />
       </div>
     </div>
   );

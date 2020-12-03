@@ -1,10 +1,5 @@
-.DefaultInput {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .DefaultInput > label {
+  display: block;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;

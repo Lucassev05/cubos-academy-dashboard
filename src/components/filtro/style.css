@@ -1,0 +1,31 @@
+.menu-horizontal {
+  width: 100%;
+  border-bottom: 1px solid #263238;
+}
+
+.menu-opcao {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  border-radius: 0;
+  border-bottom: 4px solid transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 0.97rem;
+  color: #263238;
+}
+
+.ativo {
+  border-bottom: 4px solid #263238;
+}
+
+.menu-opcao:hover {
+  border-bottom: 4px solid #515355;
+  cursor: pointer;
+}
+
+.menu-opcao:focus {
+  outline: none;
+}

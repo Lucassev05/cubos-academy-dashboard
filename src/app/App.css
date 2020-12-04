@@ -13,6 +13,15 @@
 .App > div {
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
+}
+
+/* .cardMargin {
+  margin-right: 2rem;
+} */
+
+.teste {
+  background-color: yellowgreen;
+  margin-top: 3rem;
 }

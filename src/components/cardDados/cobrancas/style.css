@@ -1,0 +1,38 @@
+.previstas,
+.pagas,
+.vencidas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.12rem 1.5rem;
+  border-radius: 8px;
+  width: 16rem;
+}
+
+.previstas {
+  color: #5197b5;
+  border: 2px solid #5197b5;
+  margin-bottom: 1rem;
+}
+
+.vencidas {
+  color: #ff4d4d;
+  border: 2px solid #ff4d4d;
+  margin-bottom: 1rem;
+}
+
+.pagas {
+  color: #4ec06e;
+  border: 2px solid #4ec06e;
+}
+
+.previstas > p,
+.vencidas > p,
+.pagas > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+}

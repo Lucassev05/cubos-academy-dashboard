@@ -5,7 +5,11 @@ import { Users } from "../../../assets/index.js";
 
 export function CardClientes(props) {
   return (
-    <CardDados src={Users} titulo="Clientes">
+    <CardDados
+      classNameCard={props.classNameCard}
+      src={Users}
+      titulo="Clientes"
+    >
       <div className="emDia">
         Em dia <p>{props.emDia}</p>
       </div>

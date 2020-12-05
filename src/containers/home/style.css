@@ -34,3 +34,18 @@
 .Text > a {
   color: #ff038a;
 }
+
+.relatorio {
+  padding: 4.5rem;
+}
+
+.relatorio .cards-de-relatorios {
+  margin-top: 2.5rem;
+  margin-bottom: 5.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.CardMargem {
+  margin-right: 2.5rem;
+}

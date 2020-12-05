@@ -1,6 +1,9 @@
 .sidebar-container {
-  background: #263238;
+  position: sticky;
+  top: 0;
+  left: 0;
   height: 100vh;
+  background: #263238;
   max-width: 16.5rem;
   display: flex;
   flex-direction: column;
@@ -15,5 +18,7 @@
   margin-top: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
+  width: 100%;
 }

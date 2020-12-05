@@ -1,22 +1,23 @@
 import React from "react";
 import "./style.css";
 import { Card } from "../../components/card/index.js";
-import { DefaultInput } from "../../components/input/index.js";
+import { Input } from "../../components/input/index.js";
 import { Button } from "../../components/button/index.js";
+import { Link } from "react-router-dom";
 
 export function Cadastro(props) {
   return (
-    <div>
+    <div className="content-login">
       <Card>
-        <DefaultInput id="inputName" label="Nome" className="inputMargin" />
-        <DefaultInput
+        <Input id="inputName" label="Nome" className="inputMargin" />
+        <Input
           id="inputEmail"
           label="E-mail"
           type="email"
           placeholder="exemplo@exemplo.com"
           className="inputMargin"
         />
-        <DefaultInput
+        <Input
           id="inputPassword"
           type="password"
           label="Senha"
@@ -25,7 +26,7 @@ export function Cadastro(props) {
         <Button className="buttonMargin">Criar conta</Button>
       </Card>
       <p className="Text">
-        Não tem uma conta? <a href="">Cadastre-se!</a>{" "}
+        Já possui uma conta? <Link to="/">Acesse agora!</Link>{" "}
       </p>
     </div>
   );

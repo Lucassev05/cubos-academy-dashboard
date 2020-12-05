@@ -1,3 +1,8 @@
+.DefaultInput {
+  display: flex;
+  flex-direction: column;
+}
+
 .DefaultInput > label {
   display: block;
   font-family: Montserrat;

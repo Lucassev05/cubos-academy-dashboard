@@ -8,7 +8,7 @@ export function Sidebar(props) {
   return (
     <div className="sidebar-container">
       <img className="logo" src={LogoWhite} alt="logo cubos academy" />
-      <MenuLink src={Home} alt="Home" title="Home" />
+      <MenuLink active src={Home} alt="Home" title="Home" />
       <MenuLink src={Money} alt="Cobranças" title="Cobranças" />
       <MenuLink src={Users} alt="Clientes" title="Clientes" />
       <div>

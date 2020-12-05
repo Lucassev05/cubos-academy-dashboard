@@ -1,26 +1,31 @@
+import React from "react";
 import "./App.css";
-import { Sidebar } from "../containers/sidebar/index.js";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Home } from "../containers/home";
+import { Sidebar } from "../containers/sidebar";
 import { Login } from "../containers/login";
-import { Logout } from "../containers/logout";
-import { SaldoEmConta } from "../components/saldoconta";
-import { CardDados } from "../components/cardDados";
-import { Users } from "../assets/index.js";
-import { CardClientes } from "../components/cardDados/clientes/index.js";
-
-import { CardCobrancas } from "../components/cardDados/cobrancas/index.js";
-import { CardFaturamento } from "../components/cardDados/faturamento/index.js";
-import { FiltroTempo } from "../components/filtro/filtroTempo/index.js";
-import { FiltroGrafico } from "../components/filtro/filtroGrafico/index.js";
-
-import { SearchInput } from "../components/searchInput/index.js";
+import { Cadastro } from "../containers/cadastro";
 
 function App() {
+  const [token, setToken] = React.useState(null);
   return (
     <div className="App">
-      <Sidebar />
-      <div>
-        <SearchInput></SearchInput>
-      </div>
+      <BrowserRouter>
+        <div className="main">
+          {token && <Sidebar></Sidebar>}
+          <Switch>
+            {!token && <Route exact path="/login" component={Login} />}
+            {!token && <Route exact path="/cadastro" component={Cadastro} />}
+            <div className="container-geral">
+              {token && <Route exact path="/home" component={Home} />}
+              <Route
+                path="/"
+                render={() => <Redirect to={token ? "/home" : "/login"} />}
+              />
+            </div>
+          </Switch>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

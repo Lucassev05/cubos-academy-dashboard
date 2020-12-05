@@ -1,9 +1,13 @@
 import React from "react";
 import "./style.css";
 
-export function DefaultInput(props) {
+export function Input(props) {
   return (
-    <div className={`${"DefaultInput"} ${props.className}`}>
+    <div
+      className={` ${
+        props.style == "Secondary" ? "SecondaryInput" : "DefaultInput"
+      } ${props.className}`}
+    >
       <label for={props.id}>{props.label}</label>
       <input
         id={props.id}
